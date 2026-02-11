@@ -2,19 +2,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, #fbfdff 0%, #f3f8ff 40%, #ffffff 100%);
   background-color: #ffffff;
   color: #333;
   line-height: 1.6;
+  font-size: 18px; /* increased base font for readability */
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   background-color: #eaf6ff; /* soft light blue background */
+  padding: 60px 20px; /* added pixel padding for spacing */
 }
 
 .hero img {
+  width: 300px;
   border-radius: 50%;
   border: solid 4px #16213e;
   margin-bottom: 20px;
@@ -23,19 +27,26 @@ body {
 .hero h1 {
   margin: 20px 0 10px;
   color: #16213e;
+  font-family: inherit; /* use the site-wide sans-serif */
+  font-size: 44px; /* larger and prominent */
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .hero p {
   margin: 10px 0 20px;
   color: #555;
+  font-size: 18px; /* clearer body text under heading */
 }
 
 .hero button {
   background-color: #533483; 
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
+  padding: 14px 28px; /* larger clickable area */
+  font-size: 18px; /* larger label */
 }
 
 .hero button:hover {
@@ -51,6 +62,12 @@ body {
   max-width: 800px;
 }
 
+.description p {
+  font-size: 18px; /* larger, consistent description text */
+  color: #333;
+  line-height: 1.6;
+}
+
 /* How It Works Section */
 .how-it-works {
   padding: 40px 20px;
@@ -61,7 +78,10 @@ body {
 .how-it-works h2 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #0f3460
+  color: #0f3460;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .how-it-works ol {
@@ -94,6 +114,9 @@ strong {
 .features h2 {
   margin-bottom: 20px;
   color: #1a1a2e;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .features ul {
@@ -107,6 +130,7 @@ strong {
 .features li {
   padding: 15px 0;
   border-bottom: 1px solid #e0e0e0;
+  font-size: 18px; /* increase feature text readability */
 }
 
 .features li strong {
